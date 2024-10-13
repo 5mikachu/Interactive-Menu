@@ -1,0 +1,51 @@
+{
+    "Pancakes": [
+        "flour", 
+        "milk", 
+        "eggs", 
+        "butter"
+    ],
+    "Peanut Butter Sandwich": [
+        "peanuts", 
+        "bread", 
+        "butter"
+    ],
+    "Spaghetti Bolognese": [
+        "ground beef", 
+        "tomato sauce", 
+        "spaghetti"
+    ],
+    "Chicken Parmesan": [
+        "chicken breast", 
+        "marinara sauce", 
+        "mozzarella cheese"
+    ],
+    "Pizza": [
+        "dough", 
+        "tomato sauce", 
+        "mozzarella cheese"
+    ],
+    "Lasagna": [
+        "lasagna noodles", 
+        "meat sauce", 
+        "ricotta cheese"
+    ],
+    "Chicken Nuggets": [
+        "chicken breast", 
+        "breading", 
+        "cooking oil"
+    ],
+    "Mac and Cheese": [
+        "macaroni", 
+        "cheese sauce"
+    ],
+    "Hamburger": [
+        "ground beef", 
+        "bun", 
+        "cheese"
+    ],
+    "French Fries": [
+        "potatoes", 
+        "cooking oil"
+    ]
+}

@@ -1,0 +1,78 @@
+{
+    "dairy": [
+        "milk",
+        "cheese",
+        "butter",
+        "lactose",
+        "casein",
+        "yogurt",
+        "sour cream"
+    ],
+    "nuts": [
+        "peanuts",
+        "almonds",
+        "cashews",
+        "tree nuts",
+        "walnuts",
+        "hazelnuts",
+        "pecans",
+        "pistachios",
+        "macadamia nuts"
+    ],
+    "shellfish": [
+        "shrimp",
+        "lobster",
+        "crab",
+        "mussels",
+        "clams",
+        "squid",
+        "octopus"
+    ],
+    "gluten": [
+        "wheat",
+        "flour",
+        "barley",
+        "rye",
+        "oats",
+        "triticale",
+        "bread",
+        "dough"
+    ],
+    "eggs": [
+        "egg whites",
+        "egg yolks"
+    ],
+    "fish": [
+        "salmon",
+        "tuna",
+        "cod",
+        "haddock",
+        "halibut",
+        "tilapia",
+        "mackerel",
+        "sardines"
+    ],
+    "soy": [
+        "soybeans",
+        "tofu",
+        "tempeh",
+        "soy sauce",
+        "edamame"
+    ],
+    "celery": [
+        "celery stalks",
+        "celery seeds"
+    ],
+    "mustard": [
+        "mustard seeds",
+        "mustard powder"
+    ],
+    "sesame": [
+        "sesame seeds",
+        "tahini"
+    ],
+    "sulfites": [
+        "sulfur dioxide",
+        "potassium metabisulfite"
+    ]
+}
