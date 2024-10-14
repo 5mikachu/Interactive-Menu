@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+        <title>Restaurant Menu</title>
+    </head>
+    <body>
+        <h1>Restaurant Menu</h1>
+        <form method="POST" action="/">
+            <div class="container">
+                <div class="allergy-list">
+                    <h2>Select Allergies</h2>
+                    <div>
+                        {% for allergy in allergies %}
+                            <input type="checkbox" name="allergies" value="{{ allergy }}" id="{{ allergy }}">
+                            <label for="{{ allergy }}">{{ allergy }}</label><br>
+                        {% endfor %}
+                    </div>
+                    <div>
+                        <button type="submit" class="submit-button">Filter Menu</button>
+                    </div>
+                </div>
+                <div class="menu-list">
+                    <h2>Menu Items</h2>
+                    <div id="menu-items">
+                        {% for item in menu %}
+                            <div class="menu-item">
+                                <strong>{{ item.name }}</strong><br>
+                                <span>{{ item.ingredients }}</span>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </form>
+    </body>
+</html>

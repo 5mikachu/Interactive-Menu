@@ -1,51 +1,80 @@
 {
     "Pancakes": [
-        "flour", 
-        "milk", 
-        "eggs", 
+        "flour",
+        "milk",
+        "eggs",
         "butter"
     ],
-    "Peanut Butter Sandwich": [
-        "peanuts", 
-        "bread", 
-        "butter"
+    "Vegan Salad": [
+        "lettuce",
+        "tomatoes",
+        "olive oil",
+        "celery stalks"
     ],
-    "Spaghetti Bolognese": [
-        "ground beef", 
-        "tomato sauce", 
-        "spaghetti"
+    "Grilled Salmon": [
+        "salmon",
+        "lemon",
+        "olive oil",
+        "herbs"
     ],
-    "Chicken Parmesan": [
-        "chicken breast", 
-        "marinara sauce", 
-        "mozzarella cheese"
+    "Peanut Butter Smoothie": [
+        "peanuts",
+        "almond milk",
+        "bananas",
+        "honey"
     ],
-    "Pizza": [
-        "dough", 
-        "tomato sauce", 
-        "mozzarella cheese"
+    "Shrimp Scampi": [
+        "shrimp",
+        "garlic",
+        "butter",
+        "parsley"
     ],
-    "Lasagna": [
-        "lasagna noodles", 
-        "meat sauce", 
-        "ricotta cheese"
+    "Vegetarian Pizza": [
+        "flour",
+        "tomato sauce",
+        "mozzarella cheese",
+        "mushrooms",
+        "bell peppers"
     ],
-    "Chicken Nuggets": [
-        "chicken breast", 
-        "breading", 
-        "cooking oil"
+    "Tofu Stir Fry": [
+        "tofu",
+        "soy sauce",
+        "bell peppers",
+        "broccoli"
     ],
-    "Mac and Cheese": [
-        "macaroni", 
-        "cheese sauce"
+    "Beef Tacos": [
+        "ground beef",
+        "taco shells",
+        "sour cream",
+        "cheese",
+        "lettuce",
+        "tomatoes"
     ],
-    "Hamburger": [
-        "ground beef", 
-        "bun", 
-        "cheese"
+    "Chocolate Cake": [
+        "flour",
+        "eggs",
+        "butter",
+        "cocoa powder",
+        "sugar"
     ],
-    "French Fries": [
-        "potatoes", 
-        "cooking oil"
+    "Seafood Paella": [
+        "shrimp",
+        "lobster",
+        "mussels",
+        "rice",
+        "saffron",
+        "peas"
+    ],
+    "Almond Croissant": [
+        "flour",
+        "butter",
+        "almonds",
+        "sugar"
+    ],
+    "Greek Yogurt Parfait": [
+        "greek yogurt",
+        "honey",
+        "strawberries",
+        "granola"
     ]
 }

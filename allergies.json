@@ -6,7 +6,11 @@
         "lactose",
         "casein",
         "yogurt",
-        "sour cream"
+        "sour cream",
+        "cream",
+        "ghee",
+        "kefir",
+        "whey protein"
     ],
     "nuts": [
         "peanuts",
@@ -17,7 +21,10 @@
         "hazelnuts",
         "pecans",
         "pistachios",
-        "macadamia nuts"
+        "macadamia nuts",
+        "nut butters",
+        "nut oils",
+        "granola"
     ],
     "shellfish": [
         "shrimp",
@@ -26,7 +33,9 @@
         "mussels",
         "clams",
         "squid",
-        "octopus"
+        "octopus",
+        "scallops",
+        "crawfish"
     ],
     "gluten": [
         "wheat",
@@ -36,11 +45,21 @@
         "oats",
         "triticale",
         "bread",
-        "dough"
+        "dough",
+        "pasta",
+        "baking powder (with gluten)",
+        "wheat starch",
+        "wheat protein",
+        "taco shells"
     ],
     "eggs": [
         "egg whites",
-        "egg yolks"
+        "egg yolks",
+        "whole eggs",
+        "mayonnaise",
+        "custard",
+        "meringue",
+        "albumin"
     ],
     "fish": [
         "salmon",
@@ -50,29 +69,67 @@
         "halibut",
         "tilapia",
         "mackerel",
-        "sardines"
+        "sardines",
+        "anchovies",
+        "fish sauce",
+        "fish stock"
     ],
     "soy": [
         "soybeans",
         "tofu",
         "tempeh",
         "soy sauce",
-        "edamame"
-    ],
-    "celery": [
-        "celery stalks",
-        "celery seeds"
-    ],
-    "mustard": [
-        "mustard seeds",
-        "mustard powder"
+        "edamame",
+        "miso",
+        "soy protein",
+        "soy lecithin",
+        "soy milk",
+        "textured vegetable protein (TVP)"
     ],
     "sesame": [
         "sesame seeds",
-        "tahini"
+        "tahini",
+        "sesame oil",
+        "sesame paste"
     ],
-    "sulfites": [
-        "sulfur dioxide",
-        "potassium metabisulfite"
+    "legumes": [
+        "lentils",
+        "chickpeas",
+        "peas",
+        "black beans",
+        "kidney beans",
+        "soybeans",
+        "fava beans",
+        "lupin"
+    ],
+    "fruits": [
+        "apples",
+        "bananas",
+        "oranges",
+        "strawberries",
+        "kiwi",
+        "avocado",
+        "peaches",
+        "cherries",
+        "melons",
+        "pineapple"
+    ],
+    "mushrooms": [
+        "shiitake",
+        "button mushrooms",
+        "portobello",
+        "crimini",
+        "enoki",
+        "oyster mushrooms",
+        "chanterelles",
+        "morels"
+    ],
+    "chocolate": [
+        "cocoa",
+        "cocoa powder",
+        "chocolate",
+        "white chocolate",
+        "dark chocolate",
+        "milk chocolate"
     ]
 }
