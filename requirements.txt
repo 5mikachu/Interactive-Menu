@@ -1,2 +1,2 @@
-logging==3.11.3
+logging==0.4.9.6
 Flask==3.0.3

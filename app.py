@@ -1,9 +1,16 @@
 import json
 import logging
+
 from flask import Flask, request, render_template
 
+
 def load_menu_items() -> dict:
-    menu_items_files = 'menuitems.json'
+    """
+    Load menu items from menuitems.json
+
+    :return:
+    """
+    menu_items_files: str = 'menuitems.json'
     try:
         with open(menu_items_files, 'r') as file:
             return json.load(file)
@@ -11,8 +18,14 @@ def load_menu_items() -> dict:
         logging.warning("Error loading menuitems.json")
         return {}
 
+
 def load_allergies() -> dict:
-    allergies_file = 'allergies.json'
+    """
+    Load allergies from allergies.json
+
+    :return:
+    """
+    allergies_file: str = 'allergies.json'
     try:
         with open(allergies_file, 'r') as file:
             return json.load(file)
@@ -20,12 +33,25 @@ def load_allergies() -> dict:
         logging.warning("Error loading allergies.json")
         return {}
 
+
 def get_formatted_items(menu_items: dict) -> list:
+    """
+    Format menu items for display
+
+    :param menu_items:
+    :return:
+    """
     sorted_menu_items: list[tuple[str]] = sorted(menu_items.items())
     return [f"{name}: {', '.join(ingredients)}" for name, ingredients in sorted_menu_items]
 
-# List menu items based on whether they contain specified allergens
+
 def list_items_by_allergen_status(selected_allergies: list) -> tuple[list, list]:
+    """
+    List menu items based on whether they contain specified allergens
+
+    :param selected_allergies:
+    :return:
+    """
     menu_items: dict = load_menu_items()
     allergy_data: dict = load_allergies()
     can_eat: list = []
@@ -42,9 +68,15 @@ def list_items_by_allergen_status(selected_allergies: list) -> tuple[list, list]
         else:
             can_eat.append(menu_item)
 
+    # Add "Baked Air" if no items remain after filtering for allergens
+    if not can_eat:
+        can_eat.append("Baked Air")
+
     return can_eat, cannot_eat
 
+
 app = Flask(__name__)
+
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
@@ -58,7 +90,7 @@ def index():
         if not selected_allergies:
             selected_allergies: list = []
 
-        can_eat, cannot_eat = list_items_by_allergen_status(selected_allergies)
+        can_eat, _ = list_items_by_allergen_status(selected_allergies)
 
         for name in can_eat:
             ingredients = menu_items[name]
@@ -70,6 +102,7 @@ def index():
             filtered_menu.append({"name": name.strip(), "ingredients": ingredients.strip()})
 
     return render_template('index.html', allergies=allergies, menu=filtered_menu)
+
 
 if __name__ == '__main__':
     logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
