@@ -1,74 +1,129 @@
 {
-    "Pancakes": [
-        "flour",
-        "milk",
-        "eggs",
-        "butter"
+  "Pancakes": {
+    "ingredients": [
+      "flour",
+      "milk",
+      "eggs",
+      "butter"
     ],
-    "Grilled Salmon": [
-        "salmon",
-        "lemon",
-        "olive oil",
-        "herbs"
+    "course": "breakfast",
+    "price": 5.99
+  },
+  "Grilled Salmon": {
+    "ingredients": [
+      "salmon",
+      "lemon",
+      "olive oil",
+      "herbs"
     ],
-    "Peanut Butter Smoothie": [
-        "peanuts",
-        "almond milk",
-        "bananas",
-        "honey"
+    "course": "main",
+    "price": 12.99
+  },
+  "Peanut Butter Smoothie": {
+    "ingredients": [
+      "peanuts",
+      "almond milk",
+      "bananas",
+      "honey"
     ],
-    "Shrimp Scampi": [
-        "shrimp",
-        "garlic",
-        "butter",
-        "parsley"
+    "course": "beverage",
+    "price": 4.99
+  },
+  "Shrimp Scampi": {
+    "ingredients": [
+      "shrimp",
+      "garlic",
+      "butter",
+      "parsley"
     ],
-    "Vegetarian Pizza": [
-        "flour",
-        "tomato sauce",
-        "mozzarella cheese",
-        "mushrooms",
-        "bell peppers"
+    "course": "main",
+    "price": 14.99
+  },
+  "Vegetarian Pizza": {
+    "ingredients": [
+      "flour",
+      "tomato sauce",
+      "mozzarella cheese",
+      "mushrooms",
+      "bell peppers"
     ],
-    "Tofu Stir Fry": [
-        "tofu",
-        "soy sauce",
-        "bell peppers",
-        "broccoli"
+    "course": "main",
+    "price": 10.99
+  },
+  "Tofu Stir Fry": {
+    "ingredients": [
+      "tofu",
+      "soy sauce",
+      "bell peppers",
+      "broccoli"
     ],
-    "Beef Tacos": [
-        "ground beef",
-        "taco shells",
-        "sour cream",
-        "cheese",
-        "lettuce",
-        "tomatoes"
+    "course": "main",
+    "price": 11.99
+  },
+  "Beef Tacos": {
+    "ingredients": [
+      "ground beef",
+      "taco shells",
+      "sour cream",
+      "cheese",
+      "lettuce",
+      "tomatoes"
     ],
-    "Chocolate Cake": [
-        "flour",
-        "eggs",
-        "butter",
-        "cocoa powder",
-        "sugar"
+    "course": "main",
+    "price": 9.99
+  },
+  "Chocolate Cake": {
+    "ingredients": [
+      "flour",
+      "eggs",
+      "butter",
+      "cocoa powder",
+      "sugar"
     ],
-    "Seafood Paella": [
-        "shrimp",
-        "lobster",
-        "mussels",
-        "rice",
-        "saffron",
-        "peas"
+    "course": "dessert",
+    "price": 6.99
+  },
+  "Seafood Paella": {
+    "ingredients": [
+      "shrimp",
+      "lobster",
+      "mussels",
+      "rice",
+      "saffron",
+      "peas"
     ],
-    "Almond Croissant": [
-        "flour",
-        "butter",
-        "almonds",
-        "sugar"
+    "course": "main",
+    "price": 15.99
+  },
+  "Almond Croissant": {
+    "ingredients": [
+      "flour",
+      "butter",
+      "almonds",
+      "sugar"
     ],
-    "Greek Yogurt Parfait": [
-        "greek yogurt",
-        "honey",
-        "strawberries",
-        "granola"
-    ]
+    "course": "breakfast",
+    "price": 3.99
+  },
+  "Greek Yogurt Parfait": {
+    "ingredients": [
+      "greek yogurt",
+      "honey",
+      "strawberries",
+      "granola"
+    ],
+    "course": "breakfast",
+    "price": 4.99
+  },
+  "Chicken Alfredo": {
+    "ingredients": [
+      "chicken",
+      "fettuccine",
+      "cream",
+      "parmesan",
+      "garlic"
+    ],
+    "course": "main",
+    "price": 13.99
+  }
 }

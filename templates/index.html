@@ -1,39 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
-        <title>Restaurant Menu</title>
-    </head>
-    <body>
-        <h1>Restaurant Menu</h1>
-        <form method="POST" action="/">
-            <div class="container">
-                <div class="allergy-list">
-                    <h2>Select Allergies</h2>
-                    <div>
-                        {% for allergy in allergies %}
-                            <input type="checkbox" name="allergies" value="{{ allergy }}" id="{{ allergy }}">
-                            <label for="{{ allergy }}">{{ allergy }}</label><br>
-                        {% endfor %}
-                    </div>
-                    <div>
-                        <button type="submit" class="submit-button">Filter Menu</button>
-                    </div>
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="{{ url_for('static', filename='styles.css') }}" rel="stylesheet">
+    <script src="https://unpkg.com/htmx.org@1.6.1"></script>
+    <title>Restaurant Menu</title>
+</head>
+<body>
+<h1>Restaurant Menu</h1>
+<form action="/" hx-post="/" hx-swap="innerHTML" hx-target="#menu-items"
+      hx-trigger="change from:input[name=allergies], change from:select[name=course]" method="POST">
+    <div class="container">
+        <div class="preferences">
+            <div class="allergy-list">
+                <h2>Select Allergies</h2>
+                <div>
+                    {% for allergy in allergies %}
+                        <input id="{{ allergy }}" name="allergies" type="checkbox" value="{{ allergy }}">
+                        <label for="{{ allergy }}">{{ allergy }}</label><br>
+                    {% endfor %}
                 </div>
-                <div class="menu-list">
-                    <h2>Menu Items</h2>
-                    <div id="menu-items">
-                        {% for item in menu %}
-                            <div class="menu-item">
-                                <strong>{{ item.name }}</strong><br>
-                                <span>{{ item.ingredients }}</span>
-                            </div>
-                        {% endfor %}
-                    </div>
+                <div>
+                    <button class="reset-button" type="reset">Clear</button>
                 </div>
             </div>
-        </form>
-    </body>
+            <div class="course-list">
+                <h2>Select Course</h2>
+                <select name="course">
+                    <option value="">All</option>
+                    {% for course in courses %}
+                        <option value="{{ course }}">{{ course }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+        </div>
+        <div class="menu-list">
+            <h2>Menu Items</h2>
+                <div id="menu-items">
+                {% for item in menu %}
+                    <div class="menu-item">
+                        <strong>{{ item.name }}</strong><br>
+                        <span>{{ item.ingredients }}</span><br>
+                        <span>€{{ item.price }}</span>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</form>
+</body>
 </html>

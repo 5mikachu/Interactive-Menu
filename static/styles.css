@@ -15,7 +15,7 @@ h2 {
     display: flex;
     justify-content: space-evenly;
 }
-.allergy-list {
+.preferences {
     width: 30vw;
     padding-right: 2em;
 }

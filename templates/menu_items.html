@@ -1,0 +1,7 @@
+{% for item in menu %}
+    <div class="menu-item">
+        <strong>{{ item.name }}</strong><br>
+        <span>{{ item.ingredients }}</span><br>
+        <span>€{{ item.price }}</span>
+    </div>
+{% endfor %}
